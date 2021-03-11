@@ -38,6 +38,7 @@ nnoremap <silent> <C-Down>  :resize -3<CR>
 
 colorscheme nord
 set number
+set list
 set spell
 
 set listchars=space:·
