@@ -11,6 +11,10 @@ Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-surround'
 Plug 'will133/vim-dirdiff'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'preservim/nerdtree'
+Plug 'preservim/nerdcommenter'
+Plug 'dense-analysis/ale'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -35,6 +39,12 @@ nnoremap <silent> <C-Right> :vertical resize -3<CR>
 nnoremap <silent> <C-Up>    :resize +3<CR>
 nnoremap <silent> <C-Down>  :resize -3<CR>
 
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+set belloff=all
 
 colorscheme nord
 set number
@@ -42,3 +52,4 @@ set list
 set spell
 
 set listchars=space:·
+
