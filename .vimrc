@@ -1,20 +1,33 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
-" Declare the list of plugins.
-Plug 'tpope/vim-sensible'
-Plug 'junegunn/seoul256.vim'
+" Theme plugins
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'arcticicestudio/nord-vim'
+
+" navigation plugins
+Plug 'preservim/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'markstory/vim-zoomwin'
+
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
+
+" Dev plugins 
 Plug 'tpope/vim-surround'
-Plug 'will133/vim-dirdiff'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'preservim/nerdtree'
+Plug 'airblade/vim-gitgutter'
 Plug 'preservim/nerdcommenter'
+Plug 'will133/vim-dirdiff'
 Plug 'dense-analysis/ale'
+
+" Plant Uml
+Plug 'aklt/plantuml-syntax'
+Plug 'tyru/open-browser.vim'
+Plug 'weirongxu/plantuml-previewer.vim'
+
+Plug 'chrisbra/Recover.vim'
+Plug 'christoomey/vim-system-copy'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -52,4 +65,11 @@ set list
 set spell
 
 set listchars=space:·
+
+set updatetime=100
+
+" vim-markdown
+let g:vim_markdown_autowrite = 1
+let g:vim_markdown_edit_url_in = 'hsplit'
+
 
