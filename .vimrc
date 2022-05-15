@@ -10,21 +10,28 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'markstory/vim-zoomwin'
+Plug 'junegunn/fzf'
+Plug 'dyng/ctrlsf.vim'
 
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 
 " Dev plugins 
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'preservim/nerdcommenter'
 Plug 'will133/vim-dirdiff'
-Plug 'dense-analysis/ale'
+Plug 'ekalinin/Dockerfile.vim'
 
 " Plant Uml
 Plug 'aklt/plantuml-syntax'
 Plug 'tyru/open-browser.vim'
 Plug 'weirongxu/plantuml-previewer.vim'
+
+" presentation
+Plug 'sotte/presenting.vim'
+Plug 'junegunn/goyo.vim'
 
 Plug 'chrisbra/Recover.vim'
 Plug 'christoomey/vim-system-copy'
@@ -56,6 +63,8 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set cole=3
+set nowrap
 
 set belloff=all
 
@@ -70,6 +79,7 @@ set updatetime=100
 
 " vim-markdown
 let g:vim_markdown_autowrite = 1
-let g:vim_markdown_edit_url_in = 'hsplit'
+let g:vim_markdown_edit_url_in = 'tab'
 
+noremap Q !!$SHELL<CR>
 
